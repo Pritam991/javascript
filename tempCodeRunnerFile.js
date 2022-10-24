@@ -1,0 +1,2 @@
+
+const pritam =0;
