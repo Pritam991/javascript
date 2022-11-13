@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event & Event Handling</title>
+</head>
+<body>
+
+    <form onsubmit="form_submit(event)" action="test.html">
+    <button type="submit">Submit</button>
+    </form>
+
+    <button onclick="my_fun()">Submit</button>
+    <input type="text" id="field" onkeyup="update_text()" onfocus="change_color()"/>
+
+    <h1 id="heading">This is dummy text </h1>
+<script>
+    const form_submit = (e)=>{
+        console.log(e);
+        e.preventDefault();
+    };
+    const my_fun=() =>{
+        alert("This code is from function");
+    };
+
+    const change_color=()=>{
+        document.getElementById("field").style.backgroundColor="navy-blue";
+    };
+
+    const update_text=()=>{
+        let data=document.getElementById("field").value;
+    document.getElementById("heading").innerHTML=data;
+    };
+</script>
+
+
+</body>
+</html>
