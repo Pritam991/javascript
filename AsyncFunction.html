@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Function</title>
+    <script>
+
+        async function test(){
+            try{
+                 const response =  await fetch ("content/student_data.json");
+           
+                 const students = await response.json();
+
+                 return students;
+        }catch(error){
+            console.log(error);
+        }
+       test().then((res) => {
+        console.log(res);
+       });
+    </script>
+ 
+</head>
+<body>
+
+
+</body>
+</html>
