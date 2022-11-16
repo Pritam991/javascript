@@ -1,0 +1,31 @@
+[
+{
+    "name": "Arindam Majumder",
+    "branch": "Computer Science & Engineering",
+    "college": "MAKAUT",
+    "year": "2026",
+    "linkedin": "https://www.linkedin.com/in/arindam-majumder-021bb623b/",
+    "github": "https://github.com/Arindam200",
+    "gender": "Male"
+  },
+
+  {
+    "name":"Rohit Kumar Agarwal",
+    "branch": "Computer Science & Engineering",
+    "college": "HITK",
+    "year": "2025",
+    "linkedin": "https://www.linkedin.com/in/rohitzerofour/",
+    "github": "https://github.com/rohitzerofour",
+    "gender":  "Male"
+  },
+
+  {
+    "name": "Rishikesh Pandey",
+   " branch": "Science",
+    "college": "MGKVP",
+    "year": "2024",
+    "linkedin": "https://www.linkedin.com/in/rishikeshpandey1/",
+    "github": "https://github.com/rishiofficial",
+    "gender": "Male"
+  }
+]
