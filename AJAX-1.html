@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Tutorial 2</title>
+</head>
+<body>
+
+    <button id="button">Get File</button>
+    <script>
+        // Create event Listener
+        document.getElementById('button').addEventListener('click', loadText);
+        function loadText() {
+            // Create xhr object
+            var xhr= new XMLHttpRequest();
+            // OPEN - TYPE, url/ file ,async
+            xhr.open('GET', 'content.txt', true);
+
+            console.log('READYSTATE: ', xhr.readyState);
+
+            // Optional - used for loaders
+            xhr.onprogress = function(){
+                console.log('READYSTATE: ', xhr.readyState);
+            }
+
+            xhr.onload = function(){
+                console.log('READYSTATE: ', xhr.readyState);
+                if(this.status == 200){
+                    // console.log(this.responseText);
+                 document.getElementById('text').innerHTML = this.responseText;
+                }
+                else if(this.status == 400){
+                    document.getElementById('text').innerHTML = 'NOT FOUND';
+                }
+            }
+            xhr.onerror = function(){
+                console.log('Request Error.....');
+            }
+            // Send request
+            xhr.send();
+            
+        }
+    </script>
+    
+</body>
+</html>
