@@ -37,3 +37,28 @@ I’ve heard a ton of my fellow developers say error handling in Node.js is way 
 What is an error anyhow? It’s a way to see bugs in your code. Following this logic, error handling is a way to find these bugs and solve them as quickly as humanly possible.
 
 From this explanation, it’s obvious the hard part is setting up a good base for your error handling. It’s all about keeping you sane at the end of the day. Handling errors properly means developing a robust codebase and reducing development time by finding bugs and errors easily.
+
+Types of Errors: Operational vs. Programmer Errors 🔃
+
+Operational Errors🔃
+
+Operational errors represent runtime problems. These errors are expected in the Node.js runtime and should be dealt with in a proper way. This does not mean the application itself has bugs. It means they need to be handled properly. Here’s a list of common operational errors:
+
+❌failed to connect to server
+❌failed to resolve hostname
+❌invalid user input
+❌request timeout
+❌server returned a 500 response
+❌socket hang-up
+❌system is out of memory
+
+Programmer Errors🔃
+
+Programmer errors are what we call bugs. They represent issues in the code itself. Here’s a common one for Node.js, when you try reading a property of an undefined object. It’s a classic case of programmer error. Here are a few more:
+
+❌called an asynchronous function without a callback
+❌did not resolve a promise
+❌did not catch a rejected promise
+❌passed a string where an object was expected
+❌passed an object where a string was expected
+❌passed incorrect parameters in a function
