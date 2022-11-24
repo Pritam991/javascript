@@ -1,4 +1,4 @@
-# Learn javascript with fun way
+# Learn javascript with Pritam
 
 Happy Coding
 
