@@ -9,9 +9,23 @@ const credential = {
 router.post('/login',(req,res)=>{
     if(req.body.email== credential.email && req.body.password==credential.password){
         req.session.user = req.body.email;
-        res.redirect('/dashboard');
+         res.redirect('/dashboard');
+        // res.send("Login Successful...!");
     }
     else{
         res.end("invalid username")
     }
+});
+
+// route for dashboard
+route.get('/dashboard',(req,res)=>{
+    if(req.session.user){
+        res.render('dashboard',{user:req.session.user})
+
+    }
+    else{
+        res.send("Unauthorized User")
+    }
 })
+
+module.exports= router;
