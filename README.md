@@ -1,4 +1,4 @@
-# Learn javascript with Pritam
+# Learn NodeJS with Pritam
 
 Happy Coding
 
