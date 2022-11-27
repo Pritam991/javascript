@@ -68,3 +68,7 @@ Uncaught Exceptions🔃
 When a JavaScript error is not properly handled, an uncaughtException is emitted. These suggest the programmer has made an error, and they should be treated with the utmost priority.
 
 The correct use of uncaughtException is to perform synchronous cleanup of allocated resources (e.g. file descriptors, handles, etc) before shutting down the process. It is not safe to resume normal operation after uncaughtException because system becomes corrupted. The best way is to let the application crash, log the error and then restart the process automatically using nodemon or pm2.
+
+Nodejs async programming🔃
+
+Asynchronous code means that things can happen independently of the main program flow, async functions in JavaScript are processed in the background without blocking other requests. It ensures non-blocking code execution. Asynchronous code executes without having any dependency and no order. This improves the system efficiency and throughput. Making web apps requires knowledge of asynchronous concepts since we will be dealing with actions that require some time to get processed.
