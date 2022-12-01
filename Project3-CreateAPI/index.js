@@ -3,21 +3,21 @@ const app = express()
 
 const port = 3001
 
-const dogs = {
+const dogs = [
     { name: "Ponchu", breed : "Labrador" },
     { name: "Dj", breed : "Dobarman" }
-}
+]
 
 app.get("/",(req,res)=>{
     res.json(dogs)
 })
 
-app.get("/dogs/:id", (res,req)=>{
+app.get("/dogs/:id", (req,res)=>{
     res.json(dogs[parseInt(req.params.id) -1])
 })
 
-app.listen(port,()=>{
-    console.log('Listen on port ${port}');
+app.listen(port, ()=>{
+    console.log(`Listen on port ${port}`);
 })
 
 // CRUD = create , read, update, delete
