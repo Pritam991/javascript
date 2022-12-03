@@ -100,3 +100,7 @@ Node.js, being an asynchronous platform, doesn't wait around for things like fil
 Fastify🚀
 
 Fastify is a web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture, inspired by Hapi and Express.
+
+NestJS🚀
+
+NestJS is a progressive Node.js framework for creating efficient and scalable server-side applications.
