@@ -80,3 +80,19 @@ In Node.js, an event can be described simply as a string with a corresponding ca
 Event Loop🔃
 
 The Event Loop is one of the most critical aspects of Node.js. Why is this so important? Because it explains how Node.js can be asynchronous and have non-blocking I/O, it explains the "killer feature" of Node.js, which made it this successful.
+
+Promises🔃
+
+A promise is commonly defined as a proxy for a value that will eventually become available Asynchronous functions use promise behind the scenes, so understanding how promises work is fundamental to understanding how "async" and "await" works. Once a promise has been called, it will start in a pending state. This means that the calling function continues executing, while the promise is pending until it resolves, giving the calling function whatever data was being requested.
+
+Creating a Promise: The Promise API exposes a Promise constructor, which you initialize using newPromise().
+
+Using resolve() and reject(), we can communicate back to the caller what the resulting Promise state was, and what to do with it.
+
+Async/Await🔃
+
+Async/Await is a special syntax to work with promises in a more comfortable fashion. It's easy to understand and use. Adding the keyword async before a function ensures that the function returns a promise and the keyword await makes JavaScript wait until that promise settles and returns the result.
+
+Callbacks🚀
+
+Node.js, being an asynchronous platform, doesn't wait around for things like file I/O to finish - Node.js uses callbacks. A callback is a function called at the completion of a given task; this prevents any blocking, and allows other code to be run in the meantime.
