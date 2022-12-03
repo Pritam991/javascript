@@ -1,8 +1,7 @@
 let items = [
-    {id: '1' , name: 'Google' },
-    {id: '2' , name: 'Microsoft' },
-    {id: '3' , name: 'Maukaa' },
-    {id: '4' , name: 'Zoho' },
-]
-
-module.exports= items
+    { id: '1', name: 'Item One' },
+    { id: '2', name: 'Item Two' },
+    { id: '3', name: 'Item Three' },
+  ]
+  
+  module.exports = items

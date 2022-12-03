@@ -1,22 +1,22 @@
-// Require the framework and instantiate it
 const fastify = require('fastify')({ logger: true })
-const PORT = 5002
-
-const items = require('./Items')
-
-
-fastify.get('/items', (req, reply) => {
-    reply.send({test: 'Hello'})
+fastify.register(require('fastify-swagger'), {
+  exposeRoute: true,
+  routePrefix: '/docs',
+  swagger: {
+    info: { title: 'fastify-api' },
+  },
 })
+fastify.register(require('./routes/items'))
 
+const PORT = 5000
 
-// Run the server!
 const start = async () => {
-    try {
-      await fastify.listen(PORT)
-    } catch (err) {
-      fastify.log.error(err)
-      process.exit(1)
-    }
+  try {
+    await fastify.listen(PORT)
+  } catch (error) {
+    fastify.log.error(error)
+    process.exit(1)
   }
-  start()
+}
+
+start()
