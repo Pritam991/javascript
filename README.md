@@ -118,3 +118,7 @@ Nodemon🚀
 In Node.js, you need to restart the process to make changes take effect. This adds an extra step to your workflow. You can eliminate this extra step by using nodemon or PM2 to restart the process automatically.
 
 nodemon is a command-line interface (CLI) utility developed by @rem that wraps your Node app, watches the file system, and automatically restarts the process.
+
+EJS🚀
+
+EJS is a templating language or engine that allows you to generate HTML markup with pure JavaScript. And this is what makes it perfect for Nodejs applications. In simple words, the EJS template engine helps to easily embed JavaScript into your HTML template.
