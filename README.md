@@ -108,3 +108,7 @@ NestJS is a progressive Node.js framework for creating efficient and scalable se
 Express.js🚀
 
 Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a single page, multipage, and hybrid web application.Express was developed by TJ Holowaychuk and is now maintained by Node.js foundation and open source developers.
+
+Http module🚀
+
+To make HTTP requests in Node.js, there is a built-in module HTTP in Node.js to transfer data over the HTTP. To use the HTTP server in node, we need to require the HTTP module using require() method. The HTTP module creates an HTTP server that listens to server ports and gives a response back to the client.
