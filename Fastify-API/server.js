@@ -2,6 +2,8 @@
 const fastify = require('fastify')({ logger: true })
 const PORT = 5002
 
+const items = require('./Items')
+
 
 fastify.get('/items', (req, reply) => {
     reply.send({test: 'Hello'})
