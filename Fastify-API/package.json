@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "fastify": "^4.10.2",
+    "fastify-swagger": "^5.2.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
