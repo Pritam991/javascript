@@ -122,3 +122,9 @@ nodemon is a command-line interface (CLI) utility developed by @rem that wraps y
 EJS🚀
 
 EJS is a templating language or engine that allows you to generate HTML markup with pure JavaScript. And this is what makes it perfect for Nodejs applications. In simple words, the EJS template engine helps to easily embed JavaScript into your HTML template.
+
+Pug🚀
+
+Pug is a JavaScript template engine. It is a high-performance template engine heavily influenced by Haml and implemented with JavaScript for Node.js and browsers. Pug was formerly called Jade.
+
+Pug is a high-performance template engine heavily influenced by Haml and implemented with JavaScript for Node.js and browsers
