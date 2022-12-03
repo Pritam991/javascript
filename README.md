@@ -76,3 +76,7 @@ Asynchronous code means that things can happen independently of the main program
 Event Emitter🔃
 
 In Node.js, an event can be described simply as a string with a corresponding callback. An event can be "emitted" (or, in other words, the corresponding callback be called) multiple times or you can choose to only listen for the first time it is emitted.
+
+Event Loop🔃
+
+The Event Loop is one of the most critical aspects of Node.js. Why is this so important? Because it explains how Node.js can be asynchronous and have non-blocking I/O, it explains the "killer feature" of Node.js, which made it this successful.
