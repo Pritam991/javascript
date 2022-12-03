@@ -96,3 +96,7 @@ Async/Await is a special syntax to work with promises in a more comfortable fash
 Callbacks🚀
 
 Node.js, being an asynchronous platform, doesn't wait around for things like file I/O to finish - Node.js uses callbacks. A callback is a function called at the completion of a given task; this prevents any blocking, and allows other code to be run in the meantime.
+
+Fastify🚀
+
+Fastify is a web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture, inspired by Hapi and Express.
