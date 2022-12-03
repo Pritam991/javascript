@@ -112,3 +112,9 @@ Express is a node js web application framework that provides broad features for 
 Http module🚀
 
 To make HTTP requests in Node.js, there is a built-in module HTTP in Node.js to transfer data over the HTTP. To use the HTTP server in node, we need to require the HTTP module using require() method. The HTTP module creates an HTTP server that listens to server ports and gives a response back to the client.
+
+Nodemon🚀
+
+In Node.js, you need to restart the process to make changes take effect. This adds an extra step to your workflow. You can eliminate this extra step by using nodemon or PM2 to restart the process automatically.
+
+nodemon is a command-line interface (CLI) utility developed by @rem that wraps your Node app, watches the file system, and automatically restarts the process.
